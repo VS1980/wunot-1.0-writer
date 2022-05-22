@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Wunot</title>
+    <meta charset="utf-8" />
+
+</head>
+<ul>
+    <li>Wunot</li>
+    <li><a href="home.html"><button>Home</button></a></li>
+    <li><a href="login.html"><button>Login</button></a></li>
+</ul>
+<h1>Login</h1>
+<body class="body">
+    <form action="home.html">
+        <label>Email:</label>
+        <input id="username" type="email"  /><br />
+        <label>Password:</label>
+        <input id="pass" type="password" /><br />
+        <button type="submit" onclick="validate()"> Submit</button>
+
+
+
+    </form>
+</body>
+<style>
+    .body {
+        font-family: 'Microsoft Sans Serif';
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #dddddd;
+    }
+
+    li {
+        float: left;
+    }
+
+        li a {
+            display: block;
+            padding: 8px;
+        }
+</style>
+<script>validate
+    function validate() {
+        var username = document.getElementById(username);
+        var password = document.getElementById(pass);
+
+        if (username == "admin" && password == "admins") {
+            alert("LoginUnsuccessful");
+            return false;
+        }
+        else {
+            alert("LoginSuccessful");
+            return false;
+        }
+
+
+    }
+
+</script>
+</html>
